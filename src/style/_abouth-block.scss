@@ -1,0 +1,59 @@
+.abouth {
+
+    &__inner {
+        position: relative;
+    }
+
+    &__img {
+        display: flex;
+
+        img{
+            max-width: 100vh;
+            height: auto;
+        }
+    }
+
+    &__img-1{
+        width: 50%;
+    }
+    &__img-2{
+        width: 50%;
+    }
+
+    &__button {
+        position: absolute;
+        top: 50%;
+        left: 44%;
+        
+    }
+
+    &__btn {
+        font-family: $OpenSans;
+        font-size: 16px;
+        width: 157px;
+        height: 157px;
+        border-radius: 50%;
+        transition: all 0.3s ease-in;
+        &::after{
+            position: absolute;
+            bottom: 0;
+            content: '';
+            width: 0%;
+        }
+        &:hover{
+            background-color: $button;
+            color: $white-text;
+            transition: all 0.3s ease-in;
+            &::after{
+                content: '';
+                display: block;
+                height: 1px;
+                width: 70%;
+                background-color: $white-text;
+                transition: all 0.4s ease-in;
+                top: 90px;
+                left: 15%;
+            }
+        }
+    }
+}

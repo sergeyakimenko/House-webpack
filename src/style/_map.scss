@@ -1,0 +1,45 @@
+.map {
+
+    &__inner {
+        display: flex;
+    }
+
+    &__location {
+    }
+
+    &__text {
+        background-color: #E9ECE0;
+        padding-left: 80px;
+        padding-top: 150px;
+        color: $button;
+        width: 100%;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    &__subtitle {
+        padding-top: 60px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+        width: 465px;
+    }
+}
+
+
+//AREA
+
+.area-map {
+
+    &__inner {
+        margin-top: 160px;
+    }
+
+    &__location {
+        
+    }
+}

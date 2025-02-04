@@ -1,0 +1,130 @@
+.contacts {
+    font-family: $OpenSans;
+    &__inner {
+        margin-top: 140px;
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__contact {
+        a{
+            color: $black-text;
+            transition: all 0.2s ease-in;
+            &:hover{
+                transition: all 0.2s ease-in;
+                color: $button;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 60px;
+        color: $button;
+        padding-bottom: 80px;
+    }
+
+    &__adress {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__tell {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    &__mail {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+        color: $black-text;
+        padding-bottom: 60px;
+    }
+
+    &__social {
+        display: flex;
+        gap: 50px;
+    }
+
+    &__social-inst {
+
+        width: 50px;
+        height: 50px;
+        background-color: $button;
+        border-radius: 50%;
+        text-align: center;
+
+    }
+
+    &__social-fb {
+        width: 50px;
+        height: 50px;
+        background-color: $button;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    &__social-twitter {   
+        width: 50px;
+        height: 50px;
+        background-color: $button;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    &__social-inst-link{
+        display: block;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        &:hover{
+            background-color: #454645;
+        }
+    }
+    &__social-fb-link{
+        display: block;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        &:hover{
+            background-color: #454645;
+        }
+    }
+    &__social-twitter-link{
+        display: block;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        &:hover{
+            background-color: #454645;
+        }
+    }
+
+    &__img{
+        padding-top: 15px;
+    }
+
+    &__button {
+        padding-top: 80px;
+    }
+
+    &__button-img {
+        width: 384px;
+    }
+
+    &__button-button {
+        display: flex;
+    }
+
+    &__btn {
+    }
+
+    &__text {
+    }
+}

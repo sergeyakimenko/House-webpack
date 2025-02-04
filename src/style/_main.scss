@@ -1,0 +1,183 @@
+.main {
+    background-image: linear-gradient( rgba(44, 44, 44, 0.4), rgba(44, 44, 44, 0.5) ), url('/src/img/main/main-img.jpg');
+    background-repeat: no-repeat;
+    height: 70%;
+    background-size: 100%;
+    position: relative;
+    font-family: $OpenSans;
+    &__inner {
+        color: $white-text;
+        
+    }
+
+    &__title {
+        position: absolute;
+        right: 0;
+        font-size: 70px;
+        padding-right: 50px;
+        padding-top: 50px;
+        line-height: 72px;
+        font-weight: 300;
+    }
+
+    &__subtitle {
+        position: absolute;
+        right: 80px;
+        top: 120px;
+        padding-right: 50px;
+        font-size: 20px;
+        padding-top: 40px;
+        text-align: center;
+        line-height: 28px;
+        font-weight: 300;
+
+    }
+
+	&__button {
+        position: absolute;
+        bottom: -40px;
+        left: 100px;
+        display: flex;
+	}
+	&__btn {
+        
+	}
+
+	&__btn-text {
+
+	}
+
+    &__btn-text-top{
+        margin-right: 32px;
+    }
+    &__btn-text-bottom{
+        margin-left: 12px;
+    }
+}
+.price {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+//PAGE HUT
+.hut-main {
+    background-image: linear-gradient( rgba(44, 44, 44, 0.4), rgba(44, 44, 44, 0.5) ), url('../src/img/hut-img/main/main.png');
+    background-repeat: no-repeat;
+    &__inner {
+        height: 350px;
+    }
+
+    &__title {
+        text-align: center;
+        padding-top: 50px;
+        font-size: 70px;
+        font-weight: 300;
+        font-family: $OpenSans;
+        color: $white-text;
+    }
+}
+
+
+
+//PAGE AREA
+
+.area-main {
+    background-image: linear-gradient( rgba(44, 44, 44, 0.4), rgba(44, 44, 44, 0.5) ), url('./img/area-img/main-area.png');
+		&__inner {
+            height: 350px;
+            text-align: center;
+            font-family: $OpenSans;
+            color: $white-text;
+		}
+
+		&__title {
+            padding-top: 50px;
+            font-size: 70px;
+            font-weight: 300;
+            line-height: 72px;
+		}
+
+		&__location {
+            padding-top: 30px;
+		}
+
+		&__location-link {
+            font-size: 18px;
+            color: $white-text;
+            img{
+                margin-top: 2px;
+            }
+            span{
+                padding-left: 10px;
+            }
+            &:hover{
+                text-decoration: underline;
+            }
+		}
+}
+
+
+//BLOCK ABOUT
+
+.about-main {
+    background-image: linear-gradient( rgba(44, 44, 44, 0.4), rgba(44, 44, 44, 0.5) ), url('./img/about-img/main-about.png');
+
+    &__inner {
+        height: 350px;
+        text-align: center;
+        font-family: $OpenSans;
+        color: $white-text;
+    }
+
+    &__title {
+        padding-top: 50px;
+        font-size: 70px;
+        font-weight: 300;
+        line-height: 72px;
+    }
+
+    &__buttons {
+        margin-top: 100px;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    &__buttons--link {
+        padding-top: 10px;
+        display: block;
+        color: $white-text;
+        font-family: $OpenSans;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        width: 180px;
+        height: 55px;
+        transition: all 0.3s ease-in;
+        &:hover{
+            transition: all 0.3s ease-in;
+            background-color: #7070708a;
+        }
+    }
+
+    &__contact-btn {
+        background: none;
+        border: 0.2px solid $white-text;
+        width: 180px;
+        height: 55px;
+    }
+
+    &__faq-btn {
+        background: none;
+        border: 0.7px solid $white-text;
+        width: 180px;
+        height: 55px;
+    }
+}

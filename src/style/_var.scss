@@ -1,0 +1,37 @@
+
+$button: #5B6460;
+$white-text:#fff;
+$black-text:#000;
+
+
+$OpenSans: 'Open Sans';
+
+.book__btn{
+    background-color: $button;
+        text-transform: uppercase;
+        transition: all 0.3s ease-in;
+        color: $white-text;
+        width: 264px;
+        height: 100px;
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        &:hover{
+            background-color: #808E88;
+        }
+}
+
+.text__btn{
+    padding-top: 21px;
+    width: 120px;
+    height: 100px;
+    color: #333333;
+    background-color: #E9ECE0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.border{
+    border: 0.7px solid $button;
+}
