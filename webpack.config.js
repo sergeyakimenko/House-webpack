@@ -31,8 +31,10 @@ module.exports = {
         new HtmlWebpackPlugin({filename: 'index.html', template: path.resolve(__dirname, 'src', 'index.html')}),
         new HtmlWebpackPlugin({filename: 'hut.html',template: path.resolve(__dirname, 'src', 'hut.html')}),
         new HtmlWebpackPlugin({filename: 'area.html',template: path.resolve(__dirname, 'src', 'area.html')}),
-        new HtmlWebpackPlugin({filename: 'faq.html',template: path.resolve(__dirname, 'src', 'faq.html')}),
+        new HtmlWebpackPlugin({filename: 'booking.html',template: path.resolve(__dirname, 'src', 'booking.html')}),
         new HtmlWebpackPlugin({filename: 'about.html',template: path.resolve(__dirname, 'src', 'about.html')}),
+        new HtmlWebpackPlugin({filename: 'faq.html',template: path.resolve(__dirname, 'src', 'faq.html')}),
+        
     new MiniCssExtractPlugin({
         filename: '[name].[contenthash].css',
     })

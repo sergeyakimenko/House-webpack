@@ -4,6 +4,7 @@
 import './index.html';
 import './hut.html';
 import './area.html';
+import './booking.html';
 import './faq.html';
 import './index.scss';
 import './modules/header.js';

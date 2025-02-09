@@ -118,6 +118,40 @@
 		}
 }
 
+.booking-main {
+    background-image: linear-gradient( rgba(44, 44, 44, 0.4), rgba(44, 44, 44, 0.5) ), url('../src/img/booking-img/main-booking.png');
+		&__inner {
+            height: 350px;
+            text-align: center;
+            font-family: $OpenSans;
+            color: $white-text;
+		}
+
+		&__title {
+            padding-top: 50px;
+            font-size: 70px;
+            font-weight: 300;
+            line-height: 72px;
+		}
+
+		&__location {
+            padding-top: 30px;
+		}
+
+		&__location-link {
+            font-size: 18px;
+            color: $white-text;
+            img{
+                margin-top: 2px;
+            }
+            span{
+                padding-left: 10px;
+            }
+            &:hover{
+                text-decoration: underline;
+            }
+		}
+}
 
 //BLOCK ABOUT
 
