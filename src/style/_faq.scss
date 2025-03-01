@@ -21,7 +21,7 @@
 
 .faq-main-list {
     
-    &__hidden-content {
+    &__hidden-content, &__hidden-content_prices,&__hidden-content_the-walk,&__hidden-content_capacity,&__hidden-content_pets,&__hidden-content_check-in {
         display: none;
         margin-top: 20px;
         padding-left: 25px;
@@ -34,13 +34,13 @@
         line-height: 18px;
     }
 
-    &__hidden-content-title {
+    &__hidden-content-title,&__hidden-content-title_prices,&__hidden-content-title_the-walk,&__hidden-content-title_capacity,&__hidden-content-title_pets,&__hidden-content-title_check-in {
         font-size: 18px;
         padding-top: 20px;
         padding-bottom: 40px;
     }
 
-    &__hidden-content-text {
+    &__hidden-content-text,&__hidden-content-text_prices,&__hidden-content-text_the-walk,&__hidden-content-text_capacity,&__hidden-content-text_pets,&__hidden-content-text_check-in {
         font-size: 14px;
         padding-bottom: 50px;
         span{
@@ -50,32 +50,44 @@
     }
     
 }
-.btn-show-content {
+.btn-show-content, .btn-show-content_prices,.btn-show-content_the-walk,.btn-show-content_capacity,.btn-show-content_pets,.btn-show-content_check-in {
     position: relative;
     width: 34px;
     height: 34px;
     border-radius: 50%;
     color: #E9ECE0;
     transition: all 0.3s ease-in;
-    &::before {
-        content: '';
-        position: absolute;
-        left: 25%;
-        width: 10px;
-        height: 0;
-        transform: rotate(220deg);
-        border: 0.1px solid #333333;
-    }
-    &::after {
-        content: '';
-        position: absolute;
-        right: 25%;
-        width: 10px;
-        height: 0;
-        transform: rotate(140deg);
-        border: 0.1px solid #333333;
-    }
+   
     &:hover{
         color: #e0e0e0;
     }
+}
+
+.btn-rotate_prices,.btn-rotate_the-walk,.btn-rotate_capacity,.btn-rotate_pets,.btn-rotate_check-in {
+    display: block;
+    align-items: center;
+    img{
+        transform: rotate(-90deg);
+        padding-right: 20%;
+    }
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     top: 38%;
+    //     left: 40%;
+    //     width: 10px;
+    //     height: 0;
+    //     transform: rotate(220deg);
+    //     border: 0.1px solid #333333;
+    // }
+    // &::after {
+    //     content: '';
+    //     position: absolute;
+    //     top: 55%;
+    //     left: 40%;
+    //     width: 10px;
+    //     height: 0;
+    //     transform: rotate(-220deg);
+    //     border: 0.1px solid #333333;
+    // }
 }
