@@ -29,20 +29,76 @@
 
     &__list-li {
         display: flex;
-        justify-content: space-between;
+        position: relative;
         align-items: center;
         background-color: #E9ECE0;
         width: 600px;
+        height: 70px;
         margin-bottom: 20px;
     }
+    &__checkbox{
+        cursor: pointer;
+        position: relative;
+        margin-left: 25px;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background-color: $white-text;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 48%;
+            left: 28%;
+            width: 16px;
+            border: 1px solid #333333;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: 48%;
+            left: 28%;
+            transform: rotate(90deg);
+            width: 16px;
+            border: 1px solid #333333;
+        }
+        &_option{
+            cursor: pointer;
+            position: relative;
+            border: 1px solid #333333;
+            margin-left: 25px;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background-color: $white-text;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 48%;
+                left: 28%;
+                width: 16px;
+                border: 1px solid #333333;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                top: 48%;
+                left: 28%;
+                transform: rotate(90deg);
+                width: 16px;
+                border: 1px solid #333333;
+            }
+        }
 
+        
+    }
     &__list-text{
-        padding: 10px 0 10px 0;
-        margin-left: 60px;
+        padding: 16px 0 10px 0;
+        margin-left: 20px;
     }
 
     &__hidden-list{
-        
+        display: none;
+        padding-bottom: 20px;
     }
     
     &__hidden-list-li{
@@ -51,70 +107,60 @@
         align-items: center;   
         width: 600px;
         margin-bottom: 20px;
-
+        padding: 15px 0 15px 0;
     }
-
+    &__btn-show-content{
+        position: absolute;
+        right: 25px;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background-color:#E9ECE0;
+        transition: all 0.3s ease-in;
+            
+    }
     p{
         font-weight: 600;
         font-size: 18px;
-        line-height: 20px;
+        line-height: 6px;
         color: #333333;
     }
 
     span{
-        
         font-weight: 400;
         font-size: 16px;
         line-height: 18px;
         color: #333333;
     }
-    // input[type="checkbox"]{
+
+}
+
+.btn-rotate{
+    display: block;
+    padding-top: 10px;
+    img{
         
-    // }
-    // label{
-    //     width: 38px;
-    //     height: 38px;
-    // }
+    }
 }
 
-.checkbox-input{
-    margin-top: 5px;
-    width: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.checkbox-label{
-
-}
-
-// .list-checkbox{
-//     position: absolute;
-//     z-index: -1;
-//     opacity: 0;
-//     display: block;
-//     width: 0;
-//     height: 0;
-// }
-// .list-checkbox+label{
-//     display: inline-flex;
-//     align-items: center;
-//     user-select: none;
-//     ::before{
-//         content: '';
-//         background-color: $black-text;
-//         display: inline-block;
-//         width: 38px;
-//         height: 38px;
-//         flex-shrink: 0;
-//         flex-grow: 0;
-//         border: 1px solid #adb5bd;
-//         border-radius: 0.25em;
-//         margin-right: 0.5em;
-//         background-repeat: no-repeat;
-//         background-position: center center;
-//         background-size: 50% 50%;
-//     }
-// }
-.btn-show-content {
+.active-choise{
+    background-color: #5B6460;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 58%;
+        left: 24%;
+        width: 10px;
+        transform: rotate(38deg);
+        border: 1px solid #ffffff;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        top: 51%;
+        left: 40%;
+        transform: rotate(126deg);
+        width: 16px;
+        border: 1px solid #ffffff;
+    }
 }

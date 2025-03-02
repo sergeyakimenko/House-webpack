@@ -8,17 +8,17 @@ $OpenSans: 'Open Sans';
 
 .book__btn{
     background-color: $button;
-        text-transform: uppercase;
-        transition: all 0.3s ease-in;
-        color: $white-text;
-        width: 264px;
-        height: 100px;
-        font-size: 18px;
-        font-weight: 300;
-        letter-spacing: 1px;
-        &:hover{
-            background-color: #808E88;
-        }
+    text-transform: uppercase;
+    transition: all 0.3s ease-in;
+    color: $white-text;
+    width: 264px;
+    height: 100px;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    &:hover{
+        background-color: #808E88;
+    }
 }
 
 .text__btn{
